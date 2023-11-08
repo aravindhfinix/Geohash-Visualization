@@ -56,6 +56,9 @@ function App() {
     }
   }, [staticCoordinatesInput]);
 
+  const isGeohashButtonDisabled = geohashInput.trim() === '';
+  const isStaticCoordinatesButtonDisabled = staticCoordinatesInput.trim() === '';
+
   return (
     <div className="App">
       <div>
@@ -70,7 +73,7 @@ function App() {
           style={{ width: '300px' }}
         />
         <br />
-        <button onClick={handleAddGeohashes}>Add Geohashes</button>
+        <button onClick={handleAddGeohashes} disabled={isGeohashButtonDisabled}>Add Geohashes</button>
 
         <br />
         <br />
@@ -82,7 +85,7 @@ function App() {
           style={{ width: '300px' }}
         />
         <br />
-        <button onClick={handleAddStaticCoordinates}>Add Static Coordinates</button>
+        <button onClick={handleAddStaticCoordinates} disabled={isStaticCoordinatesButtonDisabled}>Add Static Coordinates</button>
       </div>
     </div>
   );
