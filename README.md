@@ -1,5 +1,5 @@
 ## Geohash input example
-t9ywx
+t9ywx,t9yy8
 
 ## Static quadinate inputs example
 
