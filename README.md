@@ -7,4 +7,4 @@ t9ywx,t9yy8
 
 ## Deployed site link
 
-https://bejewelled-druid-e2b9a6.netlify.app
+https://geohashvisualizationsparkout.netlify.app

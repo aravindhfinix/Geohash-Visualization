@@ -14,7 +14,7 @@ const MapWithGeohashes = React.memo(({ geohashList, staticCoordinates }) => {
         [bounds[2], bounds[1]],
       ];
       return (
-        <Polygon key={geohashCode} positions={polygon}>
+        <Polygon key={geohashCode} positions={polygon} >
           <Popup>{geohashCode}</Popup>
         </Polygon>
       );
